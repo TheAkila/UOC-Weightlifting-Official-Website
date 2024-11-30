@@ -19,29 +19,15 @@ import award03 from '../assets/award03.png';
 import award05 from '../assets/award05.png';
 import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
-import gericht from '../assets/gericht.png';
+import WLlogo from '../assets/WLlogo.png';
+import close from '../assets/close.jpeg';
+import team from '../assets/team.JPG';
+import aboutus from '../assets/aboutus.JPG';
 
 export default {
-  bg,
-  chef,
-  G,
-  gallery01,
-  gallery02,
-  gallery03,
-  gallery04,
-  knife,
-  logo,
-  menu,
-  overlaybg,
-  spoon,
-  welcome,
-  findus,
-  laurels,
-  award01,
-  award02,
-  award03,
-  award05,
-  sign,
-  quote,
-  gericht,
+  
+  WLlogo,
+  close,
+  team,
+  aboutus,
 };

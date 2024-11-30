@@ -13,16 +13,18 @@ const Navbar = () => {
   return(
   <nav className="app_navbar">
     <div className='app_navbar-logo'>
-      <img src={images.gericht} alt="app logo" />
+      <img src={images.WLlogo} alt="app logo" />
        
     </div>
 
     <ul className="app_navbar-links">
       <li className='p_opensans'><a href="#home">Home</a></li>
-      <li className='p_opensans'><a href="#About">About</a></li>
-      <li className='p_opensans'><a href="#Men">Men</a></li>
-      <li className='p_opensans'><a href="#Women">Women</a></li>
-      <li className='p_opensans'><a href="#Contact">Contact</a></li>
+      <li className='p_opensans'><a href="#About Us">About Us</a></li>
+      <li className='p_opensans'><a href="#Team">Team</a></li>
+      <li className='p_opensans'><a href="#Competitions">Competitions</a></li>
+      <li className='p_opensans'><a href="#Gallery">Gallery</a></li>
+      <li className='p_opensans'><a href="#News & Updates">News & Updates</a></li>
+      <li className='p_opensans'><a href="#Contact Us">Contact Us</a></li>
     </ul>
 
      <div className="app_navbar-smallscreen">
@@ -33,11 +35,13 @@ const Navbar = () => {
         <div className="app_navbar-smallscreen_overlay flex_center slide-bottom" >
           <MdOutlineRestaurantMenu fontsize={27} className="overlay_close" onClick={() => setToggleMenu(false)} />
           <ul className="app_navbar-smallscreen-links">
-            <li className='p_opensans'><a href="#home">Home</a></li>
-            <li className='p_opensans'><a href="#About">About</a></li>
-            <li className='p_opensans'><a href="#Men">Men</a></li>
-            <li className='p_opensans'><a href="#Women">Women</a></li>
-            <li className='p_opensans'><a href="#Contact">Contact</a></li>
+          <li className='p_opensans'><a href="#home">Home</a></li>
+      <li className='p_opensans'><a href="#About Us">About Us</a></li>
+      <li className='p_opensans'><a href="#Team">Team</a></li>
+      <li className='p_opensans'><a href="#Competitions">Competitions</a></li>
+      <li className='p_opensans'><a href="#Gallery">Gallery</a></li>
+      <li className='p_opensans'><a href="#News & Updates">News & Updates</a></li>
+      <li className='p_opensans'><a href="#Contact Us">Contact Us</a></li>
           </ul>
         </div>
        )}

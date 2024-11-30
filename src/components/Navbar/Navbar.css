@@ -1,116 +1,198 @@
-.app_navbar{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--color-black);
-
-    padding: 1rem 2rem;
+/* Basic reset and general styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.app_navbar-logo{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+:root {
+  --color-black: #121212; /* Deep black for high contrast */
+  --color-white: #ffffff;
+  --color-golden: #ff6f00; /* Bright golden for highlights */
+  --color-blue: #1e40ff; /* Futuristic blue */
+  --color-red: #e63946; /* Energetic red */
+  --color-grey: #333; /* Dark grey for text */
+  --color-dark-grey: #222222;
+  --font-base: 'Roboto', sans-serif;
+  --font-bold: 'Impact', sans-serif; /* Bold and strong font */
+  --font-condensed: 'Anton', sans-serif; /* Sporty condensed font */
+}
+
+/* Navbar container */
+.app_navbar {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, var(--color-dark-grey), var(--color-black)); /* Gradient for depth */
+  padding: 0 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  font-family: var(--font-condensed);
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  border-bottom: 2px solid var(--color-red); /* Bottom border for an edge */
+  transition: all 0.4s ease;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Ensure the page content isn't hidden under the navbar */
+body {
+  padding-top: 90px; /* Prevent content from being hidden under the navbar */
+}
+
+/* Logo styling */
+.app_navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .app_navbar-logo img {
-    width: 150px;
-    
+  width: auto;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.4s ease, filter 0.4s ease;
 }
 
-.app_navbar-links {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Logo hover effect (neon/glow) */
+.app_navbar-logo img:hover {
+  transform: scale(1.1); /* Slight scale for emphasis */
+  filter: drop-shadow(0 0 10px var(--color-golden)) drop-shadow(0 0 15px var(--color-blue)); /* Neon glow */
+}
 
-    list-style: none;
+/* Navbar links */
+.app_navbar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  flex-grow: 1;
 }
 
 .app_navbar-links li {
-    margin: 0 1rem;
-    cursor: pointer;
-
+  margin: 0 2rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--font-condensed);
+  color: var(--color-white);
+  position: relative;
+  transition: all 0.3s ease;
+  text-align: center;
 }
 
+/* Navbar link hover effects with 3D effect */
 .app_navbar-links li:hover {
-    color: var(--color-grey);
+  color: var(--color-red);
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
 }
 
-.app_navbar-smallscreen{
+/* Navbar link active state */
+.app_navbar-links li.active {
+  border-bottom: 3px solid var(--color-red);
+  transform: scale(1.05); /* Slight scale for active link */
+}
+
+/* Navbar link text decoration on hover */
+.app_navbar-links li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Small screen hamburger menu */
+.app_navbar-smallscreen {
+  display: none;
+}
+
+.app_navbar-smallscreen_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  transition: 0.5s ease;
+  flex-direction: column;
+  z-index: 5;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.app_navbar-smallscreen-overlay.show {
+  display: flex;
+}
+
+.app_navbar-smallscreen_overlay .overlay_close {
+  font-size: 35px;
+  color: var(--color-red);
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.app_navbar-smallscreen_overlay .overlay_close:hover {
+  transform: rotate(180deg); /* Rotate the close icon */
+}
+
+/* Small screen navigation links */
+.app_navbar-smallscreen-links {
+  list-style: none;
+  padding: 0;
+}
+
+.app_navbar-smallscreen-links li {
+  margin: 2rem;
+  cursor: pointer;
+  color: var(--color-white);
+  font-size: 2.2rem;
+  font-family: var(--font-condensed);
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+}
+
+.app_navbar-smallscreen-links li:hover {
+  color: var(--color-red);
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 1150px) {
+  .app_navbar-links {
     display: none;
-}
-.app_navbar-smallscreen_overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width:100% ;
-    height: 100vh;
-    background: var(--color-black);
-    transition: 0.5s ease ;
-
-    flex-direction: column;
-    z-index:5 ;
+  }
 }
 
-.app_navbar-smallscreen_overlay .overlay_close{
-
-    font-size: 27px;
-    color: var(--color-golden);
-    cursor: pointer;
-
-    position: absolute;
-    top: 20px;
-    right: 20px;
-
+.app_navbar-smallscreen {
+  display: flex;
 }
 
-.app_navbar-smallscreen-links{
-    list-style: none;
-}
+@media screen and (max-width: 650px) {
+  .app_navbar {
+    padding: 1rem;
+    height: 80px; /* Mobile height */
+  }
 
-.app_navbar-smallscreen-links li{
-    margin:2rem;
-    cursor: pointer;
-    color: var(--color-golden);
-    font-size: 2rem;
-    text-align: center;
-    font-family: var(--font-base);
-}
+  .app_navbar-logo img {
+    height: 60px; /* Logo size on mobile */
+  }
 
-.app_navbar-smallscreen-links li:hover{
-    color: var(--color-white);
+  .app_navbar-links li {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
 
-}
-
-@media screen and (max-width:2000px){
-    .app_navbar-logo img{
-        width:210px;
-    }
-}
-
-@media screen and (max-width:1150px){
-    .app_navbar-links{
-        display: none;
-    }
-}
-    
-.app_navbar-smallscreen{
-    display:flex ;
-}
-
-@media  screen and (max-width: 650px) {
-    .app_navbar{
-        padding: 1rem;
-    }
-
-    .app_navbar-login{
-        display: none;
-    }
-
-    .app_navbar-logo img {
-        width:110px
-    }
-    
+  .app_navbar-smallscreen-links li {
+    font-size: 2.5rem;
+  }
 }

@@ -1,0 +1,112 @@
+/* Basic reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .about-us-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 2rem;
+    background-color: var(--color-black); /* Dark background to make the content stand out */
+    color: var(--color-white); /* White text for good contrast */
+  }
+  
+  .about-us-info {
+    max-width: 50%;
+    padding-right: 2rem;
+  }
+  
+  .about-us-title {
+    font-size: 3rem;
+    font-family: 'Anton', sans-serif; /* Bold, sporty font */
+    color: var(--color-golden); /* Neon orange for boldness */
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-us-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.8); /* Slightly less intense for readability */
+  }
+  
+  .explore-btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-black);
+    background-color: var(--color-golden);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .explore-btn:hover {
+    background-color: var(--color-white); /* Hover effect */
+    color: var(--color-black);
+    transform: scale(1.05);
+  }
+  
+  /* Image Section */
+  .about-us-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .about-us-img img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 1150px) {
+    .about-us-container {
+      flex-direction: column; /* Stack content vertically on smaller screens */
+      padding: 3rem 2rem;
+    }
+  
+    .about-us-info {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .about-us-title {
+      font-size: 2.5rem;
+    }
+  
+    .about-us-description {
+      font-size: 1rem;
+    }
+  
+    .about-us-img {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .about-us-img img {
+      max-width: 80%; /* Slightly smaller on small screens */
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .about-us-title {
+      font-size: 2rem;
+    }
+  
+    .about-us-description {
+      font-size: 1rem;
+    }
+  
+    .about-us-img img {
+      width: 100%; /* Full width on small screens */
+    }
+  }
+  

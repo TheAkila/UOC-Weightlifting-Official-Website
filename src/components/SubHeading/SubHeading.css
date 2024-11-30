@@ -1,0 +1,31 @@
+/* SubHeading component styling */
+.subheading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .subheading-text {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-golden); /* Golden color to match header theme */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    font-family: 'Cormorant', serif;
+  }
+  
+  .spoon_img {
+    width: 50px;
+    height: auto;
+    margin-top: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Add hover effect for the spoon image */
+  .spoon_img:hover {
+    transform: scale(1.1);
+  }
+  
