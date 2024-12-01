@@ -1,5 +1,3 @@
-import images from './images';
-import meal from '../assets/meal.mp4';
-import data from './data';
-
-export { images, meal, data };
+import images from './images';  // Import images
+import { mensTeam, womensTeam } from './data'; // Named imports
+export { images, mensTeam, womensTeam };

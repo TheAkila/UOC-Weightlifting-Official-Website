@@ -1,82 +1,128 @@
-import images from './images';
+import images from './images'; 
 
-const wines = [
+
+export const mensTeam = [
   {
-    title: 'Chapel Hill Shiraz',
-    price: '$56',
-    tags: 'AU | Bottle',
+    name: 'Pasindu Malawana',
+    position: 'Captain',
+    image: images.malawana, 
   },
   {
-    title: 'Catena Malbee',
-    price: '$59',
-    tags: 'AU | Bottle',
+    name: 'Ashen Shamika',
+    position: 'Vice-Captain',
+    image: images.ashen,  
   },
+
   {
-    title: 'La Vieillw Rose',
-    price: '$44',
-    tags: 'FR | 750 ml',
+    name: 'Akila     Nishan',
+    position: 'Lifter',
+    image: images.akila,  
   },
+
   {
-    title: 'Rhino Pale Ale',
-    price: '$31',
-    tags: 'CA | 750 ml',
+    name: 'Dulneth Enuka',
+    position: 'Lifter',
+    image: images.dulnethj,  
   },
+
   {
-    title: 'Irish Guinness',
-    price: '$26',
-    tags: 'IE | 750 ml',
+    name: 'Vishwa Prabash',
+    position: 'Lifter',
+    image: images.vishwa,  
   },
+
+  {
+    name: 'Dulneth Bandara',
+    position: 'Lifter',
+    image: images.dulneth,  
+  },
+
+  {
+    name: 'Sehara Sankaja',
+    position: 'Lifter',
+    image: images.sankaja,  
+  },
+
+  {
+    name: 'Akila Upamal',
+    position: 'Lifter',
+    image: images.akiller,  
+  },
+
+  {
+    name: 'Sadeepa Rukshan',
+    position: 'Lifter',
+    image: images.sadeepa,  
+  },
+
+  {
+    name: 'Senindu Lakindu',
+    position: 'Lifter',
+    image: images.senindu,  
+  },
+
 ];
 
-const cocktails = [
-  {
-    title: 'Aperol Sprtiz',
-    price: '$20',
-    tags: 'Aperol | Villa Marchesi prosecco | soda | 30 ml',
-  },
-  {
-    title: "Dark 'N' Stormy",
-    price: '$16',
-    tags: 'Dark rum | Ginger beer | Slice of lime',
-  },
-  {
-    title: 'Daiquiri',
-    price: '$10',
-    tags: 'Rum | Citrus juice | Sugar',
-  },
-  {
-    title: 'Old Fashioned',
-    price: '$31',
-    tags: 'Bourbon | Brown sugar | Angostura Bitters',
-  },
-  {
-    title: 'Negroni',
-    price: '$26',
-    tags: 'Gin | Sweet Vermouth | Campari | Orange garnish',
-  },
-];
 
-const awards = [
+export const womensTeam = [
   {
-    imgUrl: images.award02,
-    title: 'Bib Gourmond',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    name: 'Venumi kuruppu',
+    position: 'Lifter',
+    image: images.venumi, 
   },
+  
   {
-    imgUrl: images.award01,
-    title: 'Rising Star',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    name: 'Poorni ariyarathna',
+    position: 'Lifter',
+    image: images.poorni,  
   },
-  {
-    imgUrl: images.award05,
-    title: 'AA Hospitality',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
-  },
-  {
-    imgUrl: images.award03,
-    title: 'Outstanding Chef',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
-  },
-];
 
-export default { wines, cocktails, awards };
+  {
+    name: 'Piyumi Liyanage',
+    position: 'Lifter',
+    image: images.piyumi,  
+  },
+
+  {
+    name: 'yasali dulhara',
+    position: 'Lifter',
+    image: images.yasali,  
+  },
+
+  {
+    name: 'Shermila jayasuriya',
+    position: 'Lifter',
+    image: images.shermila,  
+  },
+
+  {
+    name: 'Tharini darsha',
+    position: 'Lifter',
+    image: images.tharini,  
+  },
+
+  {
+    name: 'Madumekala rajapaksha',
+    position: 'Lifter',
+    image: images.madumekala,  
+  },
+
+  {
+    name: 'Ann shehani',
+    position: 'Lifter',
+    image: images.ann,  
+  },
+
+  {
+    name: 'Dhanushi pathirana',
+    position: 'Lifter',
+    image: images.danushi,  
+  },
+
+  {
+    name: 'Amandi silva',
+    position: 'Lifter',
+    image: images.amandi,  
+  },
+
+];

@@ -196,3 +196,13 @@ body {
     font-size: 2.5rem;
   }
 }
+
+.nav-link {
+  color: #8e1d1d; /* Default link color */
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: var(--color-white); /* Active link color */
+  font-weight: bold;
+}

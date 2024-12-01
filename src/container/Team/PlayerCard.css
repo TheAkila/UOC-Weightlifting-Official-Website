@@ -1,0 +1,101 @@
+/* PlayerCard.css */
+
+/* Overall card layout */
+.player-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px;
+    padding: 15px;
+  }
+  
+  .player-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Image styles */
+  .player-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .player-card:hover .player-card-image {
+    transform: scale(1.05);
+  }
+  
+  /* Player information section */
+  .player-card-info {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  /* Player name style */
+  .player-name {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #faf2f2;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Achievements/position style */
+  .player-achievements {
+    font-size: 1rem;
+    color: #777;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0;
+    line-height: 1.4;
+  }
+  
+  /* Optional badge for sport level (achievements) */
+  .player-card-info .badge {
+    display: inline-block;
+    background-color: #f2b632;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin-top: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .player-card-info .badge.new {
+    background-color: #f02d2d;
+  }
+  
+  .player-card-info .badge.veteran {
+    background-color: #4caf50;
+  }
+  
+  /* Adding some responsive tweaks */
+  @media (max-width: 600px) {
+    .player-card {
+      max-width: 200px;
+      padding: 10px;
+    }
+  
+    .player-name {
+      font-size: 1.1rem;
+    }
+  
+    .player-achievements {
+      font-size: 0.9rem;
+    }
+  }
+  
