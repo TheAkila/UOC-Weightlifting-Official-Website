@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { mensTeam, womensTeam } from '../../constants/data';
-import PlayerCard from '/Users/akilanishan/Documents/uoc/src/container/Team/PlayerCard.jsx';
+import PlayerCard from './PlayerCard'; // Import PlayerCard from the correct path
 import './Team.css';
 
 const Team = () => (
