@@ -13,5 +13,5 @@ export {
   Header,
   NewsUpdates,
   Team,
-  
+
 };
