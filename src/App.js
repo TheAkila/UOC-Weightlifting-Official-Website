@@ -10,7 +10,7 @@ const App = () => (
     <Header />
     <AboutUs />
  
-    <Chef />
+
   
  
     <Gallery />

@@ -2,8 +2,8 @@ import AboutUs from './AboutUs/AboutUs';
 import NewsUpdates from './Footer/Footer';
 import Gallery from './Gallery/Gallery';
 import Header from './Header/Header';
-import Chef from './Chef/Chef.jsx';
-import Team from './Laurels/Laurels';
+import Team from './Team/Team.jsx';
+
 
 
 export {
@@ -13,11 +13,5 @@ export {
   Header,
   NewsUpdates,
   Team,
-  Chef,
-
-
-  
-
-
   
 };
