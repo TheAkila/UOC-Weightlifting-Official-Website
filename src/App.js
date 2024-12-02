@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { AboutUs, Team, Gallery, Header,ContactUs } from './container';
+import { AboutUs, Team, Gallery, Header,ContactUs,Competitions } from './container';
 import { Navbar } from './components'; 
-import './App.css';
 import Footer from './components/Footer/FooterOverlay';
+
 
 const App = () => (
   <div>
@@ -15,7 +15,8 @@ const App = () => (
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/Team" element={<Team />} />
         <Route path="/Gallery" element={<Gallery />} />
-        <Route path="/ContactUs" element={<ContactUs />} />  
+        <Route path="/ContactUs" element={<ContactUs />} /> 
+        <Route path="/Competitions" element={<Competitions />} />  
       </Routes>
       <Footer />
     </BrowserRouter>
