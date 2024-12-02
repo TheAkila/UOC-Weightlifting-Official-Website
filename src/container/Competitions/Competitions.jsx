@@ -1,7 +1,11 @@
 import React from 'react';
 
-const Competitions = () => {
-  return <div>Competitions Content</div>;
-};
+import './Competitions.css';
 
-export { Competitions }; 
+const Competitions = () => (
+  <div>
+  
+  </div>
+);
+
+export default Competitions;
