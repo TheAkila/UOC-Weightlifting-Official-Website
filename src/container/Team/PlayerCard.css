@@ -57,3 +57,49 @@
   font-weight: 800;
 ;
 }
+
+/* Button Styling */
+.button {
+  background-color: #007bff; /* Bold blue background */
+  color: white; /* White text */
+  font-size: 16px; /* Standard font size */
+  font-weight: 600; /* Bold text for prominence */
+  padding: 10px 20px; /* Adequate padding */
+  border: 2px solid #0056b3; /* Strong blue border */
+  border-radius: 30px; /* Rounded corners for a sleek look */
+  cursor: pointer; /* Pointer on hover */
+  display: inline-flex; /* Allow icon and text to sit next to each other */
+  align-items: center; /* Vertically center the icon and text */
+  justify-content: center; /* Horizontally center the content */
+  transition: all 0.3s ease; /* Smooth transitions for hover and active states */
+  outline: none; /* Remove the default outline */
+}
+
+.button .icon {
+  margin-left: 8px; /* Space between text and icon */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect on icon */
+}
+
+/* Hover State */
+.button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  border-color: #003d7a; /* Darker border on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.button:hover .icon {
+  transform: translateX(4px); /* Move the icon slightly to the right on hover */
+}
+
+/* Active State */
+.button:active {
+  background-color: #004080; /* Even darker blue on click */
+  border-color: #003366; /* Darker border on click */
+  transform: translateY(1px); /* Button "click" effect */
+}
+
+/* Focus State (for accessibility) */
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* Blue focus ring */
+}

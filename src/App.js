@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AboutUs, Team, Gallery, Header,ContactUs,Competitions } from './container';
-import { Navbar } from './components'; 
+import { Navbar,PopupModal } from './components'; 
 import Footer from './components/Footer/FooterOverlay';
 
 
