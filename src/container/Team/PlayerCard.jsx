@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-import './PlayerCard.css';
-import { ChevronDown } from 'lucide-react'; // Import ChevronDown icon
-import PopupModal from '/Users/akilanishan/Documents/uoc/src/components/PopupModel/PopupModel.jsx'; // Update path if necessary
+import { ChevronDown } from 'lucide-react'; // Import the ChevronDown icon for the dropdown button
+import PopupModal from '/Users/akilanishan/Documents/uoc/src/components/PopupModel/PopupModel.jsx'; // Import the PopupModal component (adjust the path if needed)
+import './PlayerCard.css'; // Import the CSS file for styling
 
 function PlayerCard({ player }) {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(false); // State to handle the modal visibility
 
-  // Handle modal show/hide
+  // Function to show the modal
   const handleShowModal = () => setShowModal(true);
+
+  // Function to close the modal
   const handleCloseModal = () => setShowModal(false);
 
   return (
@@ -20,13 +22,13 @@ function PlayerCard({ player }) {
         <h3 className="player-name">{player.name}</h3>
         <p className="player-position">{player.position}</p>
 
-        {/* Button with Icon */}
+        {/* Button with ChevronDown icon to show more details */}
         <button onClick={handleShowModal} className='show-more-button'>
           <ChevronDown size={24} className="icon" />
         </button>
 
-        {/* Modal */}
-        {showModal && <PopupModal onClose={handleCloseModal} />}
+        {/* Show PopupModal when 'showModal' is true */}
+        {showModal && <PopupModal onClose={handleCloseModal} player={player} />}
       </div>
     </div>
   );
