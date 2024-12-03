@@ -1,27 +1,59 @@
-.player-card {
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin: 10px;
-  cursor: pointer;
-  text-align: center;
-  transition: transform 0.2s ease-in-out;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppings",sans-serif;
 }
 
-.player-card:hover {
-  transform: scale(1.05);
+
+
+.image{
+  position:relative ;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: antiquewhite;
+  padding: 3px;
 }
 
-.player-image {
+.image .profile-img{
+  height: 100%;
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ffff;
 }
 
-.player-name {
-  font-size: 1.2rem;
-  font-weight: bold;
+.player-card{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
 }
 
-.player-position {
-  color: #555;
+.profile-card{
+
+  max-width: 370px;
+  width: 100%;
+  background: #ffff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+
+}
+
+.profile-card .text-data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3c3838;
+
+
+}
+
+.text-data{
+  font-size: 17px;
+  font-weight: 800;
+;
 }

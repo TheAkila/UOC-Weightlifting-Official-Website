@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './ContactUs.css';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaYoutube, FaTiktok } from 'react-icons/fa';
+import emailjs from 'emailjs-com';
+
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -10,6 +12,9 @@ const ContactUs = () => {
     message: ''
   });
 
+  const [status, setStatus] = useState(''); // Track the form submission status
+
+  // Handle form input changes
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -17,9 +22,28 @@ const ContactUs = () => {
     });
   };
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Form submitted');
+
+    // Use emailjs to send the email
+    emailjs.sendForm('service_6h2bma7', 'template_58biy6p', e.target, '_A6vcvoq9kXznenxo')
+      .then(
+        (result) => {
+          setStatus('Message sent successfully!');
+          console.log(result.text); // Log success message
+          setFormData({
+            name: '',
+            email: '',
+            subject: '',
+            message: ''
+          }); // Reset form after successful submission
+        },
+        (error) => {
+          setStatus('Failed to send message. Please try again later.');
+          console.error(error.text); // Log error message
+        }
+      );
   };
 
   return (
@@ -34,7 +58,7 @@ const ContactUs = () => {
         {/* Contact Form Section */}
         <section className="contact-form-section">
           <h2>Send Us a Message</h2>
-          <p>We welcome any questions or queries you may have about our team,the sport of weight lifting or opportunities to get involved in our programmes and initiatives. Please use the form below to submit your query, remembering to fill in all of your details so we can get back in touch</p>
+          <p>We welcome any questions or queries you may have about our team, the sport of weight lifting, or opportunities to get involved in our programmes and initiatives. Please use the form below to submit your query, remembering to fill in all of your details so we can get back in touch</p>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
               <label htmlFor="name">Full Name</label>
@@ -90,6 +114,9 @@ const ContactUs = () => {
 
             <button type="submit" className="submit-btn">Submit</button>
           </form>
+
+          {/* Show submission status */}
+          {status && <p className="form-status">{status}</p>}
         </section>
 
         {/* Contact Info Section */}
@@ -113,8 +140,6 @@ const ContactUs = () => {
           </div>
         </section>
       </div>
-
-      
     </div>
   );
 };

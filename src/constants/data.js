@@ -1,5 +1,22 @@
 import images from './images'; 
 
+export const Menscoach = [
+  {
+    name:'Lasantha Bandara',
+    image: images.banda,
+    position:'Mens Coach' ,
+   
+  }
+]
+
+export const Womenscoach = [
+  {
+    name:'Chathurika Weerasinghe',
+    image: images.akka,
+    position :'Womens Coach'
+  }
+]
+
 
 export const mensTeam = [
   {
@@ -14,7 +31,7 @@ export const mensTeam = [
   },
 
   {
-    name: 'Akila     Nishan',
+    name: 'Akila Nishan',
     position: 'Lifter',
     image: images.akila,  
   },
@@ -66,13 +83,13 @@ export const mensTeam = [
 
 export const womensTeam = [
   {
-    name: 'Venumi kuruppu',
+    name: 'Venumi Kuruppu',
     position: 'Lifter',
     image: images.venumi, 
   },
   
   {
-    name: 'Poorni ariyarathna',
+    name: 'Purni Ariyarathne',
     position: 'Lifter',
     image: images.poorni,  
   },
@@ -84,43 +101,43 @@ export const womensTeam = [
   },
 
   {
-    name: 'yasali dulhara',
+    name: 'Yasali Dulhara',
     position: 'Lifter',
     image: images.yasali,  
   },
 
   {
-    name: 'Shermila jayasuriya',
+    name: 'Shermila Jayasuriya',
     position: 'Lifter',
     image: images.shermila,  
   },
 
   {
-    name: 'Tharini darsha',
+    name: 'Tharini Darsha',
     position: 'Lifter',
     image: images.tharini,  
   },
 
   {
-    name: 'Madumekala rajapaksha',
+    name: 'Dilshani Madumekala',
     position: 'Lifter',
     image: images.madumekala,  
   },
 
   {
-    name: 'Ann shehani',
+    name: 'Ann Shehani',
     position: 'Lifter',
     image: images.ann,  
   },
 
   {
-    name: 'Dhanushi pathirana',
+    name: 'Dhanushi Pathirana',
     position: 'Lifter',
     image: images.danushi,  
   },
 
   {
-    name: 'Amandi silva',
+    name: 'Iruni Amanthika',
     position: 'Lifter',
     image: images.amandi,  
   },

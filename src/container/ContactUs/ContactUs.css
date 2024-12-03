@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap');
 
 /* General Styling for the Page */
@@ -22,8 +21,7 @@
     width: 100%;
     height: 250px; /* Slightly increased height for balance */
     overflow: hidden;
-    
-    background-image: url('/Users/akilanishan/Documents/uoc/src/assets/contact.JPG'); /* Replace with the actual image URL */
+    background-image: url('/Users/akilanishan/Documents/uoc/src/assets/aboutus.JPG'); /* Replace with the actual image URL */
     background-size: cover; /* Ensures the image covers the entire header */
     background-position: center; /* Keeps the focal point centered */
     border-bottom: 4px solid #ffffff; /* White border at the bottom for separation */
@@ -57,7 +55,7 @@
 
 /* Add a subtle hover effect to the header text */
 .contact-us-header h1:hover {
-    text-decoration:double;
+    text-decoration: double;
     text-decoration-color: #ffffff;
     cursor: pointer;
 }
@@ -250,5 +248,16 @@
     .social-icons a {
         font-size: 2rem;
         margin: 10px 15px;
+    }
+
+    /* Reduce size of the form fields and buttons on small screens */
+    .form-group input,
+    .form-group textarea {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .submit-btn {
+        font-size: 0.9rem;
     }
 }

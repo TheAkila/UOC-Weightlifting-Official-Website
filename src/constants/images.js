@@ -24,6 +24,8 @@ import madumekala from '../assets/madumekala.png';
 import shermila from '../assets/shermila.png';
 import tharini from '../assets/tharini.png';
 import contactbg from '../assets/contact.JPG';
+import akka from '../assets/akka.JPG';
+import banda from '../assets/banda.JPG'
 
 
 
@@ -54,5 +56,7 @@ export default {
   ann,
   amandi,
   contactbg,
+  akka,
+  banda,
 
 };
