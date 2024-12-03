@@ -1,0 +1,132 @@
+/* Overlay background styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Make sure it stays on top */
+  padding: 20px;
+  backdrop-filter: blur(10px); /* Optional blur effect */
+}
+
+/* Modal container styling */
+.modal-content {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px; /* Ensure the modal doesn't get too wide */
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Close button styling */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover {
+  color: #f44336; /* Change to red when hovering */
+}
+
+/* Title styling */
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Position styling */
+.modal-position {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Player image container */
+.modal-image-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Base styles for the modal-bio */
+.modal-bio {
+  margin-top: 20px;
+  color: #0a0a0a;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f9f9f9;  /* Light background for contrast */
+  padding: 15px;              /* Add some padding around the content */
+  border-radius: 8px;         /* Rounded corners for a smoother look */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styling for paragraphs inside the modal-bio */
+.modal-bio p {
+  margin: 0;
+  padding-bottom: 10px;        /* Add space between paragraphs */
+  font-family: 'Arial', sans-serif;  /* Choose a clean, legible font */
+  font-weight: 400;            /* Regular weight for readability */
+}
+
+/* Optional: Add a hover effect on the modal-bio */
+.modal-bio:hover {
+  background-color: #f0f0f0; /* Slightly darker background when hovered */
+  cursor: pointer;            /* Change cursor to indicate interactivity */
+}
+
+/* Optional: Add a border to the modal-bio */
+.modal-bio {
+  border: 1px solid #dcdcdc;  /* Light border for definition */
+}
+
+/* Optional: Add responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .modal-bio {
+    padding: 10px;              /* Reduce padding on smaller screens */
+    font-size: 14px;            /* Make text slightly smaller */
+  }
+}
+
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .modal-content {
+    padding: 15px;
+  }
+
+  .modal-title {
+    font-size: 20px;
+  }
+
+  .modal-position {
+    font-size: 16px;
+  }
+
+  .modal-image {
+    width: 100px;
+    height: 100px;
+  }
+}

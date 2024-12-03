@@ -1,23 +1,24 @@
 import React, { useRef, useEffect } from 'react';
 import { X } from 'lucide-react'; // Import close icon
+import './PopupModal.css'; // Import the CSS for styling
 
 function PopupModal({ onClose, player }) {
   const modalRef = useRef();
 
- 
+  // Close the modal when clicking outside of the modal content
   const closeModal = (e) => {
     if (modalRef.current === e.target) {
       onClose();
     }
   };
 
+  // Close the modal on pressing the Escape key
   useEffect(() => {
     const handleEsc = (e) => {
       if (e.key === 'Escape') {
         onClose();
       }
     };
-
 
     document.addEventListener('keydown', handleEsc);
     return () => {
@@ -29,31 +30,32 @@ function PopupModal({ onClose, player }) {
     <div
       ref={modalRef}
       onClick={closeModal}
-      className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center z-50"
+      className="modal-overlay"
       aria-modal="true"
       role="dialog"
     >
-      <div className="bg-white rounded-lg w-96 p-6 relative">
+      <div className="modal-content">
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+          className="close-button"
           aria-label="Close modal"
         >
           <X size={24} />
         </button>
+
         {/* Modal content */}
-        <h1 className="text-2xl font-bold text-center">{player.name}</h1>
-        <p className="text-center text-xl text-gray-500">{player.position}</p>
+        <h1 className="modal-title">{player.name}</h1>
+        <p className="modal-position">{player.position}</p>
 
         {/* Player image */}
-        <div className="mt-4 flex justify-center">
-          <img src={player.image} alt={player.name} className="w-40 h-40 rounded-full object-cover" />
+        <div className="modal-image-container">
+          <img src={player.image} alt={player.name} className="modal-image" />
         </div>
 
         {/* Player data (bio or additional info) */}
-        <div className="mt-6">
-          <p className="text-gray-700">{player.data}</p>
+        <div className="modal-bio">
+          <p>{player.data || 'No additional details available.'}</p>
         </div>
       </div>
     </div>
