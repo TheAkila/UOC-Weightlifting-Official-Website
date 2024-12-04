@@ -1,0 +1,78 @@
+/* Container for the competitions */
+.competitions-container {
+    display: grid; /* Use grid to display items as tiles */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Auto-adjust column count based on screen width */
+    gap: 20px; /* Spacing between tiles */
+    padding: 20px;
+  }
+  
+  /* Styling for each competition section (tile) */
+  .section {
+    background-color: #ffffff;
+    border: 2px solid #ffffff; /* Light border around the tile */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation on hover */
+  }
+  
+  /* Hover effect for each competition tile */
+  .section:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+  }
+  
+  /* Title styling */
+  .h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Paragraph styling */
+  .p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .competitions-container {
+      grid-template-columns: 1fr 1fr; /* Two columns on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .competitions-container {
+      grid-template-columns: 1fr; /* Single column on small screens */
+    }
+  
+    .h2 {
+      font-size: 20px; /* Slightly smaller font size for smaller screens */
+    }
+  
+    .p {
+      font-size: 14px;
+    }
+  }
+  /* Add space between the two <ul> elements */
+.list {
+    margin-bottom: 20px; /* Add space below each <ul> element */
+  }
+  
+  .p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
