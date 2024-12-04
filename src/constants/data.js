@@ -1,4 +1,132 @@
+
+
 import images from './images'; 
+
+// Competition details
+export const competitions = [
+  {
+    id: 1,
+    name: 'Interfaculty Weightlifting Championship 2023',
+    image: images.akila,
+    date: '2023-05-15',
+    location: 'University of Colombo',
+    descriptionId: 1,
+    resultsId: 1,
+  },
+  {
+    id: 2,
+    name: 'Srilanka University Games Weightlifting Championship 2023',
+    image: images.akila,
+    date: '2023-07-25',
+    location: 'University of Colombo',
+    descriptionId: 2,
+    resultsId: 2,
+  },
+  {
+    id: 3,
+    name: 'Srilanka Novices Weightlifting Championship 2023',
+    image: images.akila,
+    date: '2023-06-20',
+    location: 'Colombo Sports Complex',
+    descriptionId: 3,
+    resultsId: 3,
+  },
+  {
+    id: 4,
+    name: 'National Weightlifting Championship 2023',
+    image: images.akila,
+    date: '2023-08-10',
+    location: 'National Stadium',
+    descriptionId: 4,
+    resultsId: 4,
+  },
+  {
+    id: 5,
+    name: 'Srilanka Novices Weightlifting Championship 2024',
+    image: images.akila,
+    date: '2024-06-15',
+    location: 'Colombo Sports Complex',
+    descriptionId: 5,
+    resultsId: 5,
+  },
+  {
+    id: 6,
+    name: '48th National Sports Games Festival 2024 - Weightlifting',
+    image: images.akila,
+    date: '2024-07-10',
+    location: 'Colombo Stadium',
+    descriptionId: 6,
+    resultsId: 6,
+  },
+  {
+    id: 7,
+    name: 'Inter-University Weightlifting Championship 2024',
+    image: images.akila,
+    date: '2024-08-25',
+    location: 'University of Colombo',
+    descriptionId: 7,
+    resultsId: 7,
+  },
+  {
+    id: 8,
+    name: 'National Intermediate Weightlifting Championship 2024',
+    image: images.akila,
+    date: '2024-09-15',
+    location: 'National Stadium',
+    descriptionId: 8,
+    resultsId: 8,
+  },
+];
+
+// Descriptions for the competitions
+export const descriptions = {
+  1: 'This competition brings together the best weightlifters from different faculties.',
+  2: 'University of Colombo’s weightlifters secured the championship after 25 years.',
+  3: 'A major championship for novice weightlifters, featuring a wide array of upcoming talent.',
+  4: 'The national event to crown the top weightlifters of the country.',
+  5: 'The novice championship for emerging weightlifters in Sri Lanka.',
+  6: 'Part of the National Sports Games, featuring weightlifting competitions from across the country.',
+  7: 'A competition between Sri Lanka’s top universities, showcasing the best weightlifters.',
+  8: 'An intermediate-level competition for weightlifters who have already gained experience in national events.',
+};
+
+// Results for each competition
+export const results = {
+  1: [
+    'Champions (Men): Team FMF',
+    'Runners-Up (Men): Team UCSC',
+    'Champions (Women): Team FMF',
+    'Runners-Up (Women): Team UCSC'
+  ],
+  2: [
+    'Champions (Men): University of Colombo',
+    'Champions (Women): University of Colombo'
+  ],
+  3: [
+    'Champions (Men): Team UCSC',
+    'Champions (Women): Team FMF'
+  ],
+  4: [
+    'Champions (Men): National Weightlifting Team',
+    'Champions (Women): National Weightlifting Team'
+  ],
+  5: [
+    'Champions (Men): Team FMF',
+    'Champions (Women): Team UCSC'
+  ],
+  6: [
+    'Champions (Men): Team UCSC',
+    'Champions (Women): Team FOS'
+  ],
+  7: [
+    'Champions (Men): Team UCSC',
+    'Champions (Women): Team FMF'
+  ],
+  8: [
+    'Champions (Men): National Team',
+    'Champions (Women): National Team'
+  ],
+};
 
 // Coaches data
 export const Menscoach = [
