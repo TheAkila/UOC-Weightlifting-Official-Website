@@ -1,14 +1,12 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "poppings",sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-
-
-.image{
-  position:relative ;
+.image {
+  position: relative;
   height: 150px;
   width: 150px;
   border-radius: 50%;
@@ -16,7 +14,7 @@
   padding: 3px;
 }
 
-.image .profile-img{
+.image .profile-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -24,7 +22,7 @@
   border: 3px solid #ffff;
 }
 
-.player-card{
+.player-card {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -32,30 +30,25 @@
   background-color: aliceblue;
 }
 
-.profile-card{
-
+.profile-card {
   max-width: 370px;
   width: 100%;
   background: #ffff;
   border-radius: 20px;
   padding: 25px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.profile-card .text-data{
+.profile-card .text-data {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #3c3838;
-
-
 }
 
-.text-data{
+.text-data {
   font-size: 17px;
   font-weight: 800;
-;
 }
 
 /* Button Styling */
@@ -77,7 +70,7 @@
 
 .button .icon {
   margin-left: 8px; /* Space between text and icon */
-  transition: transform 0.3s ease; /* Smooth transition for hover effect on icon */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect on icon */
 }
 
 /* Hover State */
@@ -102,4 +95,18 @@
 .button:focus {
   outline: none;
   box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.5); /* Blue focus ring */
+}
+
+/* CSS for the Toggle Effect */
+.button.toggled .icon {
+  transform: rotate(180deg); /* Rotate the icon when toggled */
+  color: #ff5722; /* Change the icon color when toggled (optional) */
+}
+
+/* Optional additional styling for when the modal is open */
+.modal .modal-content {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

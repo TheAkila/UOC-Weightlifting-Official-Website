@@ -22,7 +22,7 @@ function PlayerCard({ player }) {
         <h3 className="player-name">{player.name}</h3>
         <p className="player-position">{player.position}</p>
 
-        {/* Button with ChevronDown icon to show more details */}
+       
         <button onClick={handleShowModal} className='show-more-button'>
           <ChevronDown size={24} className="icon" />
         </button>
