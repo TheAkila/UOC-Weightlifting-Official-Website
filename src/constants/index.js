@@ -1,3 +1,3 @@
 import images from './images';  // Import images
-import { mensTeam, womensTeam } from './data'; // Named imports
-export { images, mensTeam, womensTeam };
+import { mensTeam, womensTeam,competitions } from './data'; // Named imports
+export { images, mensTeam, womensTeam,competitions };

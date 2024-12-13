@@ -26,6 +26,10 @@ import tharini from '../assets/tharini.png';
 import contactbg from '../assets/contact.JPG';
 import akka from '../assets/akka.JPG';
 import banda from '../assets/banda.JPG'
+import img1 from '../assets/img1.JPG'
+import img2 from '../assets/img2.JPG'
+import img3 from '../assets/img3.JPG'
+import img4 from '../assets/img4.jpg'
 
 
 
@@ -58,5 +62,9 @@ export default {
   contactbg,
   akka,
   banda,
+  img1,
+  img2,
+  img3,
+  img4,
 
 };
