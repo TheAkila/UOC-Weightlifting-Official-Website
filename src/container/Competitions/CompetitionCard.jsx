@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PopupModel2 from '/Users/akilanishan/Documents/uoc/src/components/PopupModel2/PopupModel2.jsx'; 
-import './CompetitionCard.css'; 
+import './CompetitionCard.module.css'; 
 
 function CompetitionCard({ competition, description, results }) {
   const [showModel, setShowModel] = useState(false);

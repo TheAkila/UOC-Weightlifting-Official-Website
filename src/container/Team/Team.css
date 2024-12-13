@@ -60,7 +60,8 @@
 .player-position {
   font-size: 1em;
   color: #777;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  margin-top: -8px;
   text-align: center;
 }
 
@@ -70,8 +71,7 @@
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
-  padding: 10px 20px; /* Adjust padding for better appearance */
-  cursor: pointer;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,7 +79,7 @@
 }
 
 .show-more-button:hover {
-  background-color: #666; /* Slightly darker shade for hover */
+  background-color: #484747; /* Slightly darker shade for hover */
 }
 
 /* Coaches Section */

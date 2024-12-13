@@ -7,7 +7,7 @@ export const competitions = [
   {
     id: 1,
     name: 'Interfaculty Weightlifting Championship 2023',
-    image: images.akila,
+    image: images.competition,
     date: '2023-05-15',
     location: 'University of Colombo',
     descriptionId: 1,
@@ -16,7 +16,7 @@ export const competitions = [
   {
     id: 2,
     name: 'Srilanka University Games Weightlifting Championship 2023',
-    image: images.akila,
+    image: images.competition,
     date: '2023-07-25',
     location: 'University of Colombo',
     descriptionId: 2,
@@ -25,7 +25,7 @@ export const competitions = [
   {
     id: 3,
     name: 'Srilanka Novices Weightlifting Championship 2023',
-    image: images.akila,
+    image: images.competition,
     date: '2023-06-20',
     location: 'Colombo Sports Complex',
     descriptionId: 3,
@@ -34,7 +34,7 @@ export const competitions = [
   {
     id: 4,
     name: 'National Weightlifting Championship 2023',
-    image: images.akila,
+    image: images.competition,
     date: '2023-08-10',
     location: 'National Stadium',
     descriptionId: 4,
@@ -43,7 +43,7 @@ export const competitions = [
   {
     id: 5,
     name: 'Srilanka Novices Weightlifting Championship 2024',
-    image: images.akila,
+    image: images.competition,
     date: '2024-06-15',
     location: 'Colombo Sports Complex',
     descriptionId: 5,
@@ -52,7 +52,7 @@ export const competitions = [
   {
     id: 6,
     name: '48th National Sports Games Festival 2024 - Weightlifting',
-    image: images.akila,
+    image: images.competition,
     date: '2024-07-10',
     location: 'Colombo Stadium',
     descriptionId: 6,
@@ -61,7 +61,7 @@ export const competitions = [
   {
     id: 7,
     name: 'Inter-University Weightlifting Championship 2024',
-    image: images.akila,
+    image: images.competition,
     date: '2024-08-25',
     location: 'University of Colombo',
     descriptionId: 7,
@@ -70,7 +70,7 @@ export const competitions = [
   {
     id: 8,
     name: 'National Intermediate Weightlifting Championship 2024',
-    image: images.akila,
+    image: images.competition,
     date: '2024-09-15',
     location: 'National Stadium',
     descriptionId: 8,
@@ -249,6 +249,8 @@ export const mensTeam = [
     Senindu’s passion for the sport drives him to continuously improve, and he is determined to reach new heights in his weightlifting career. 
     His dedication to both physical and mental conditioning makes him a key player in the team’s future success.`
   },
+
+
 ];
 
 // Women's Team Data

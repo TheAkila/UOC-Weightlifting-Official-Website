@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronUp } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import PopupModal from '/Users/akilanishan/Documents/uoc/src/components/PopupModel/PopupModel.jsx'; 
 
 function PlayerCard({ player }) {
@@ -23,7 +23,7 @@ function PlayerCard({ player }) {
 
        
         <button onClick={handleShowModal} className='show-more-button'>
-  <ChevronUp size={24} className="icon" />
+  <ChevronDown size={24} className="icon" />
 </button>
 
 

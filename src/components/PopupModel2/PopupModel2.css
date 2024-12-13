@@ -1,0 +1,228 @@
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(22, 21, 21, 0.8); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+    backdrop-filter: blur(15px); /* Optional blur effect */
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: rgb(255, 255, 255);
+    width: 70%; /* Default width (can be adjusted for large screens) */
+    max-width: 1000px; /* Maximum width for larger screens */
+    height: 100%; /* Default height */
+    position: relative;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    overflow-y: auto;
+    animation: fadeIn 0.5s ease-out;
+    border-radius: 10px; /* Add rounded corners */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Close Button */
+  .close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    z-index: 1100;
+  }
+  
+  .close-button:hover {
+    color: #f90a0a; /* Change to red on hover */
+  }
+  
+  /* Title Styling */
+  .modal-title {
+    font-size: 2rem; /* Reduced font size */
+    font-weight: 600; /* Slightly bolder for emphasis */
+    color: #333; /* Darker shade for better contrast */
+    margin-bottom: 10px; /* Added space below the title */
+    margin-top: 0; /* Removed negative margin to avoid overlap */
+    text-align: center; /* Keep the title centered */
+    text-transform: capitalize; /* Capitalize each word */
+    letter-spacing: 1px; /* Subtle spacing between letters for better readability */
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    line-height: 1.3; /* Increased line height for a more spacious feel */
+    word-wrap: break-word; /* Ensure long words are wrapped appropriately */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  /* Position Styling */
+  .modal-position {
+    font-size: 22px;
+    color: #2d2c2c;
+    margin-top: -10px;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  /* Player Image Container */
+  .modal-image-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .modal-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .modal-image:hover {
+    transform: scale(1.01); /* Zoom effect on hover */
+  }
+  
+  /* Bio Content */
+  .modal-bio {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.8;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    max-height: 60%;
+    padding: 15px;
+  }
+  
+  .modal-bio p {
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 550;
+    text-align: left;
+    color: #000;
+  }
+  
+  /* Optional hover effect on bio */
+  .modal-bio:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  /* Bio Border */
+  .modal-bio {
+    border: 0.5px solid #d1cfcf;
+  }
+  
+  /* Responsive Design for Tablets and Smaller Screens */
+  @media (max-width: 768px) {
+    .modal-content {
+      width: 90%; /* Take up 90% of the screen width on smaller screens */
+      height: auto; /* Adjust height based on content */
+      padding: 20px;
+      border-radius: 8px;
+    }
+  
+    .modal-title {
+      font-size: 1.8rem; /* Adjust for smaller screens */
+    }
+  
+    .modal-position {
+      font-size: 18px;
+    }
+  
+    .modal-image {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .modal-bio {
+      font-size: 16px;
+      max-height: 50%;
+      padding: 20px;
+    }
+  }
+  
+  /* Responsive Design for Mobile Screens */
+  @media (max-width: 480px) {
+    .modal-content {
+      width: 90%; /* Full width on small screens */
+      height: auto; /* Let the content decide the height */
+      padding: 15px;
+    }
+  
+    .modal-title {
+      font-size: 1.5rem; /* Further reduce for mobile */
+    }
+  
+    .modal-position {
+      font-size: 16px;
+    }
+  
+    .modal-image {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .modal-bio {
+      font-size: 14px;
+      max-height: 50%;
+      padding: 15px;
+    }
+  }
+  
+  /* Full Screen Modal for Large Screens */
+  @media (min-width: 1024px) {
+    .modal-content {
+      width: 70%; /* For large screens, use a smaller width */
+      height: 90%; /* Take 90% height */
+      padding: 40px;
+    }
+  
+    .modal-title {
+      font-size: 2.5rem; /* Adjusted for large screens */
+    }
+  
+    .modal-position {
+      font-size: 24px;
+    }
+  
+    .modal-image {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .modal-bio {
+      font-size: 18px;
+      max-height: 70%;
+      padding: 25px;
+    }
+  }
+  

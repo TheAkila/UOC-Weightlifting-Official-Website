@@ -44,25 +44,30 @@ function PopupModel2({ onClose, competition, description, results }) {
         <h1 className="modal-title">{competition.name}</h1>
         <p className="modal-position">{competition.date} - {competition.location}</p>
 
-        {/* Player image */}
-        <div className="modal-image-container">
-          <img src={competition.image} alt={competition.name} className="modal-image" />
-        </div>
+        {/* Competition image */}
+        {competition.image && (
+          <div className="modal-image-container">
+            <img src={competition.image} alt={competition.name} className="modal-image" />
+          </div>
+        )}
 
         {/* Competition description */}
         <div className="modal-bio">
+          <h3>Description:</h3>
           <p>{description || 'No additional details available.'}</p>
         </div>
 
         {/* Competition results */}
-        <div className="modal-bio">
-          <h3>Results:</h3>
-          <ul>
-            {results.map((result, index) => (
-              <li key={index}>{result}</li>
-            ))}
-          </ul>
-        </div>
+        {results && results.length > 0 && (
+          <div className="modal-results">
+            <h3>Results:</h3>
+            <ul>
+              {results.map((result, index) => (
+                <li key={index}>{result}</li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   );

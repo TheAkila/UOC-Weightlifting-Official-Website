@@ -97,8 +97,8 @@
 }
 
 .modal-image {
-  width: 150px;
-  height: 150px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
@@ -159,8 +159,8 @@
   }
 
   .modal-image {
-    width: 120px;
-    height: 120px;
+    width: 50px;
+    height: 50px;
   }
 
   .modal-bio {
@@ -187,8 +187,8 @@
   }
 
   .modal-image {
-    width: 130px;
-    height: 130px;
+    width: 50px;
+    height: 50px;
   }
 
   .modal-bio {
@@ -201,7 +201,7 @@
 /* Full Screen Modal for Large Screens */
 @media (min-width: 1024px) {
   .modal-content {
-    width: 50%; /* For large screens, use a smaller width */
+    width: 70%; /* For large screens, use a smaller width */
     height: 90%; /* Take 90% height */
     padding: 40px;
   }
@@ -215,8 +215,8 @@
   }
 
   .modal-image {
-    width: 180px;
-    height: 180px;
+    width: 50px;
+    height: 50px;
   }
 
   .modal-bio {

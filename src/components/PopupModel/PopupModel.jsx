@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
-import { X } from 'lucide-react'; // Import close icon
-import './PopupModal.css'; // Import the CSS for styling
+import { X } from 'lucide-react'; 
+import './PopupModal.css'; 
 
 function PopupModal({ onClose, player }) {
   const modalRef = useRef();

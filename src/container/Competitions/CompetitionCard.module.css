@@ -1,0 +1,70 @@
+/* General Styling for the Competition Card */
+.competition-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 350px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+/* Hover effect on competition card */
+.competition-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Text Data Section */
+.text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Title - Competition Name */
+.competition-name {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Date and Location */
+.competition-date,
+.competition-location {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+/* Description Styling */
+.competition-description {
+  font-size: 1em;
+  color: #444;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  max-height: 100px; /* Make sure it doesn't overflow */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Show More Button */
+.show-more-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1em;
+  align-self: flex-start;
+}
+
+.show-more-button:hover {
+  background-color: #45a049;
+}

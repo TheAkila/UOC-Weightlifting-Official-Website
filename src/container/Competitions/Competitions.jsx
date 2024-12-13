@@ -19,7 +19,18 @@ function Competitions() {
       </div>
 
       <h2>Upcoming Competitions</h2>
-      <div></div>
+      <div className="competition-list">
+        {competitions.map((competition) => (
+          <CompetitionCard 
+            key={competition.id}
+            competition={competition}
+            description={descriptions[competition.descriptionId]}
+            results={results[competition.resultsId]}
+          />
+        ))}
+      </div>
+
+     
     </div>
   );
 }

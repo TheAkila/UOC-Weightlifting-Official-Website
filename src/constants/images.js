@@ -30,12 +30,13 @@ import img1 from '../assets/img1.JPG'
 import img2 from '../assets/img2.JPG'
 import img3 from '../assets/img3.JPG'
 import img4 from '../assets/img4.jpg'
-
+import competition from '../assets/competition.JPG'
 
 
 export default {
   
   WLlogo,
+  competition,
   close,
   team,
   aboutus,
